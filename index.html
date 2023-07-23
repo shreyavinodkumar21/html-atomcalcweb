@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Atom Pair/Triplet Calculator</title>
+</head>
+<body>
+    <h1>Atom Pair/Triplet Calculator</h1>
+    <form action="/calculate" method="POST">
+        <label for="pair_triplet">Atom Pair/Triplet:</label>
+        <input type="text" name="pair_triplet" required>
+        <br>
+        <label for="calculation_type">Calculation Type:</label>
+        <select name="calculation_type" required>
+            <option value="distance">Distance</option>
+            <option value="angle">Angle</option>
+        </select>
+        <br>
+        <label for="residue_no">Residue No.:</label>
+        <input type="text" name="residue_no" required>
+        <br>
+        <label for="atom_name">Atom Name:</label>
+        <input type="text" name="atom_name" required>
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
